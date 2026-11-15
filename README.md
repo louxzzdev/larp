@@ -1,43 +1,53 @@
+<p align="center">
+  <img src="assets/larp-logo.svg" width="112" height="112" alt="LARP Optimizer logo">
+</p>
+
 <h1 align="center">LARP Optimizer</h1>
 
 <p align="center">
-  Windows gaming diagnostics and reversible system tuning
+  <strong>Windows gaming diagnostics and reversible system tuning</strong><br>
+  Monitor your system, compare server latency, and review settings before applying them.
 </p>
 
 <p align="center">
-  <a href="#download">Download</a> ·
-  <a href="#features">Features</a> ·
+  <a href="#editions">Editions</a> ·
   <a href="#quick-start">Quick start</a> ·
+  <a href="#features">Features</a> ·
   <a href="#build-and-test">Build and test</a>
 </p>
 
-## Download
+<p align="center">
+  <code>Windows 10 / 11 x64</code> · <code>Portable EXE and standalone BAT</code> · <a href="LICENSE">MIT License</a>
+</p>
 
-| Package | Use it for |
+## Editions
+
+| Package | Experience |
 | --- | --- |
-| [LARP Optimizer.exe](release/1.5.0/LARP%20Optimizer.exe) | Portable desktop app with light and dark themes |
-| [LARP Optimizer.bat](release/1.5.0/LARP%20Optimizer.bat) | Standalone command-line edition for CMD |
-| [SHA-256 checksums](release/1.5.0/SHA256SUMS.txt) | Verify the downloaded files |
+| **LARP Optimizer.exe** | Portable desktop app with a dashboard and light and dark themes |
+| **LARP Optimizer.bat** | Standalone command-line edition for CMD |
 
-Both editions target Windows 10 and 11 x64. The EXE includes its .NET runtime. Both use Windows PowerShell 5.1. Standard access is enough for monitoring and most power-plan operations. Adapter changes, DNS cache flushing and System Restore point creation require an administrator. The EXE is unsigned.
+Follow the [build instructions](#build-and-test) to generate both packages and their SHA-256 checksums.
+
+> Both editions use Windows PowerShell 5.1. The unsigned EXE includes its .NET runtime. Standard access covers monitoring and most power-plan operations. Adapter changes, DNS cache flushing and restore-point creation require administrator access.
 
 ## Features
 
-### System optimization
+### Tune Windows settings
 
 - **Hardware-aware recommendations** show applicable Windows power-plan and processor settings.
 - **Individual controls** let you choose which changes to apply from a reviewed preset. The engine checks the current values again before writing.
 - **Plugged-in tuning** supports CPU energy preference, core parking, boost policy and PCIe link power saving when the selected plan exposes them.
 - **Game profiles** save local preferences for Valorant, Counter-Strike 2, Fortnite, Minecraft, Roblox, Call of Duty and general gaming.
 
-### Monitoring and network
+### Measure system and network performance
 
 - Follow measured CPU, RAM and GPU usage, workload trends and top processes.
 - Compare two game servers by median latency, P95 and packet loss. Inspect routes and run traceroute.
 - Review IPv4 DNS and Energy Efficient Ethernet on compatible wired adapters.
 - Capture before-and-after diagnostics and export JSON or text reports.
 
-### Performance tools and recovery
+### Open Windows tools and restore settings
 
 - Open Task Manager, Resource Monitor, Startup Apps, Installed Apps, Storage, Game Mode, graphics preferences and display refresh settings from **Tools**.
 - Review the local journal in **Restore**. Restore selected operations or modules using their recorded original values.
@@ -58,7 +68,11 @@ Both editions target Windows 10 and 11 x64. The EXE includes its .NET runtime. B
 | **Competitive** | Additional plugged-in CPU and PCIe settings with heat and power trade-offs |
 | **Custom** | Choose an installed Windows power plan and optional IPv4 DNS |
 
-**Keyboard shortcuts** · `Ctrl+K` searches pages and actions, `Ctrl+B` toggles the sidebar, and `Ctrl+1` through `Ctrl+3` open Dashboard, Optimize and Restore.
+| Shortcut | Desktop action |
+| --- | --- |
+| `Ctrl+K` | Search pages and actions |
+| `Ctrl+B` | Toggle the sidebar |
+| `Ctrl+1` / `Ctrl+2` / `Ctrl+3` | Open Dashboard, Optimize, or Restore |
 
 ## Troubleshooting
 
