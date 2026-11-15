@@ -1,12 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title">
   <title id="title">LARP Optimizer</title>
-  <defs>
-    <linearGradient id="accent" x2="1" y2="1" gradientUnits="objectBoundingBox">
-      <stop stop-color="#9dffe0"/>
-      <stop offset="1" stop-color="#38e3a0"/>
-    </linearGradient>
-  </defs>
-  <rect x="4" y="4" width="120" height="120" rx="28" fill="#101114" stroke="#34775f" stroke-width="2"/>
-  <path d="M28 33h17v50h28v16H28z" fill="url(#accent)"/>
-  <path d="M55 66h12l9-17 9 23 8-15h9" fill="none" stroke="#9dffe0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="#000000" stroke="#ffffff" stroke-width="3"/>
+  <path d="M30 30h16v52h23l28-28v22L75 98H30z" fill="#ffffff"/>
+  <path d="M75 30h22v12L85 54V42H63z" fill="#ffffff"/>
 </svg>
