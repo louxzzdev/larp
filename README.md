@@ -97,14 +97,16 @@ The app stores preferences and the rollback journal under `%LOCALAPPDATA%\LARP O
 Use the .NET 8 SDK on Windows. The build produces a self-contained WPF EXE, a standalone BAT and SHA-256 checksums.
 
 ```powershell
-powershell.exe -NoProfile -File .\scripts\Build.ps1 -ReleaseDirectory release/1.5.0
+powershell.exe -NoProfile -File .\scripts\Build.ps1 -ReleaseDirectory release/1.5.1
 powershell.exe -NoProfile -File .\tests\Engine.Tests.ps1 -Integration
-powershell.exe -NoProfile -File .\tests\BatchSmoke.ps1 -Batch "release/1.5.0/LARP Optimizer.bat" -NetworkTuning
+powershell.exe -NoProfile -File .\tests\BatchSmoke.ps1 -Batch "release/1.5.1/LARP Optimizer.bat" -NetworkTuning
 ```
 
 Use `-Dotnet` if the SDK executable is outside PATH. Use `-PowerWrite` on the engine test to verify write and restore operations on an inactive temporary power plan. The optional `GuiSmoke.ps1` test opens a desktop window. See the [operations guide](docs/Operations.md) for module details and verification steps.
 
 ## Release notes
+
+**1.5.1** adds an About page to the desktop app with a link to the LARP community on Discord.
 
 **1.5.0** adds individual selection during review and a Windows Tools page. The BAT adds optional per-module selection and quick access to Windows utilities.
 

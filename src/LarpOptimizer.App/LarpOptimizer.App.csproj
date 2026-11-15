@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyName>LARP Optimizer</AssemblyName>
-    <Version>1.5.0</Version>
+    <Version>1.5.1</Version>
     <Company>LARP</Company>
     <Product>LARP Optimizer</Product>
     <Description>Windows gaming performance and diagnostics toolkit</Description>

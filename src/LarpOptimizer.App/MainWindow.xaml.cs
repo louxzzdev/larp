@@ -116,6 +116,7 @@ public partial class MainWindow : Window
             case "Tools": Tools(); break;
             case "Restore": await Restore(); break;
             case "Settings": await Settings(); break;
+            case "About": About(); break;
         }
     }
 

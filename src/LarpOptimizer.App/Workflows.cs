@@ -344,6 +344,19 @@ public partial class MainWindow
         gamingTools.Children.Add(ButtonFor("Display refresh rate", () => OpenSettings("display-advanced")));
     }
 
+    private void About()
+    {
+        Subtitle.Text = "Meet the community behind LARP Optimizer.";
+        var community = Card(Controls, "LARP community");
+        Note(community, "LARP is a community focused on making scripts and tools that help others.");
+        Note(community, "LARP Optimizer is one of those tools, built to help Windows gamers monitor their systems and tune settings they can restore later.");
+        Row(community).Children.Add(ButtonFor("Join the LARP community on Discord", () =>
+        {
+            Process.Start(new ProcessStartInfo("https://discord.gg/wCB5U6RxDf") { UseShellExecute = true });
+            return Task.CompletedTask;
+        }, true));
+    }
+
     private static Task OpenSystemTool(string filename)
     {
         Process.Start(new ProcessStartInfo(Path.Combine(Environment.SystemDirectory, filename)) { UseShellExecute = true });

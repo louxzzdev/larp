@@ -64,7 +64,8 @@ public partial class MainWindow
         new("Network", "\uE968", "ping DNS jitter loss adapter routes"),
         new("Diagnostics", "\uE9D9", "benchmark baseline follow-up compare export"),
         new("Tools", "\uE90F", "task manager resource monitor startup storage uninstall installed apps power graphics"),
-        new("Settings", "\uE713", "theme appearance light dark motion shortcuts monitoring")
+        new("Settings", "\uE713", "theme appearance light dark motion shortcuts monitoring"),
+        new("About", "\uE946", "larp community discord scripts tools")
     ];
     private readonly List<Section> recent = [];
     private readonly SemaphoreSlim preferenceWrite = new(1, 1);
