@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>LARP Optimizer</AssemblyName>
+    <Version>1.5.0</Version>
+    <Company>LARP</Company>
+    <Product>LARP Optimizer</Product>
+    <Description>Windows gaming performance and diagnostics toolkit</Description>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="../LarpOptimizer.Engine/Engine.ps1" LogicalName="Engine.ps1"/>
+    <EmbeddedResource Include="../LarpOptimizer.Engine/Terminal.ps1" LogicalName="Terminal.ps1"/>
+  </ItemGroup>
+</Project>
