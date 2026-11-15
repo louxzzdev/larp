@@ -10,6 +10,7 @@
 </p>
 
 <p align="center">
+  <a href="#about">About</a> ·
   <a href="#editions">Editions</a> ·
   <a href="#quick-start">Quick start</a> ·
   <a href="#features">Features</a> ·
@@ -19,6 +20,12 @@
 <p align="center">
   <code>Windows 10 / 11 x64</code> · <code>Portable EXE and standalone BAT</code> · <a href="LICENSE">MIT License</a>
 </p>
+
+## About
+
+LARP is a community focused on making scripts and tools that help others. LARP Optimizer is one of those tools, built to help Windows gamers monitor their systems and tune settings they can restore later.
+
+[Join the LARP community on Discord](https://discord.gg/wCB5U6RxDf)
 
 ## Editions
 
